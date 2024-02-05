@@ -3,7 +3,7 @@
 /* Profile Object  */
 
 
-
+alert("Script working"); 
 
 /* Populate Profile Object with placesLive objects */
 let myProfile = { 
@@ -58,14 +58,20 @@ document.querySelector('#hobbies').appendChild(li);
 
 
 /* Places Lived DataList */
-myProfile.placesLived.forEach(property => { 
-    let dt = document.createElement('dt'); 
-    let dd = document.createElement('dd');
-    dt.textContent = property; 
-    dd.textContent = property[1]; 
-    document.querySelector('#places-lived').appendChild(dt); 
-    document.querySelector('#places-lived').appendChild(dd); 
 
-});
+placesElement = document.querySelector('#places-lived')
+
+function generateListMarkup(list, templateCallback) { 
+    const htmlList = list.map(templateCallback); 
+    return htmlList; 
+}
+
+function placeTemplate(place) { 
+    return `<dt>${place.place}</dt><dd>${place.length}</dd>`; 
+}
+
+placesElement.innerHTML = generateListMarkup(myProfile.placesLived, placeTemplate); 
+
+
 
 
