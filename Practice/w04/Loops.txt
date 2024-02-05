@@ -1,0 +1,16 @@
+Better options for the fol loop. Arry.forEach
+or Array.map are usually better options if 
+you are looping over an array(which you often are). 
+
+For-In 
+This form of loop allows you to iterate over 
+objects. It returns the key of the item 
+instead of the value like for of. 
+
+While 
+while is greate for when you need 
+to do something until a certian state occurs 
+in your program. You know when you wnat the
+loop to end...but aren't sure how many loops
+it will require to get there. 
+

@@ -9,7 +9,7 @@ function add(num1, num2) {
 function addNumbers() { 
     let add1 = Number(document.querySelector('#add1').value);
     let add2 = Number(document.querySelector('#add2').value);
-
+    
     document.querySelector('#sum').value = add(add1, add2);
 }
 document.querySelector('#addNumbers').addEventListener('click', addNumbers); 
@@ -58,11 +58,17 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 // let totalDue = Number(document.querySelector('#').value); 
 
-function message() { 
+function getTotalDue() { 
     // alert('The Get Total button has been clicked 👆🏿');
-    let userInput = document.querySelector('#subTotal'); 
+    let userInput = document.querySelector('#subtotal').value; 
+    const checkbox = document.querySelector("#member");
+    if (checkbox.checked){
+        userInput = (userInput * 20) / 100;
+    }
+
+    document.querySelector('#total').textContent = `$ ${userInput}`;
 }
-document.querySelector('#getTotal').addEventListener('click', message);
+document.querySelector('#getTotal').addEventListener('click', getTotalDue);
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */

@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/w03-task.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -114,7 +116,7 @@
                     <input type="checkbox" id="member">
                 </label>
                 <div class="right">
-                    <input type="button" id="getTotal" value="Get Total Due">
+                    <input type="submit" id="getTotal" value="Get Total Due">
                 </div>
                 <div class="right">Total:
                     <span class="larger" id="total">$ --.--</span>
@@ -146,11 +148,11 @@
     <footer>
         &copy;<span id="year"></span> | CSE 121b | Task 03
     </footer>
-    <script src="scripts/main.js"></script>
+    
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
-    <script src="scripts/w03-task.js"></script>
+    
 </body>
 
 </html>
