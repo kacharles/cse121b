@@ -3,7 +3,7 @@
 /* Profile Object  */
 
 
-alert("Script working"); 
+// alert("Script working"); 
 
 /* Populate Profile Object with placesLive objects */
 let myProfile = { 
