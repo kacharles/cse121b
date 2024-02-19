@@ -1,0 +1,20 @@
+Name: Charles Alfred Koenig
+Course: CSE121b/JavaScript
+Date: 02/19/2024
+
+Project Proposal:
+
+My project "Joke Generator" is a simple web application that makes use of 
+an external data, a JSON file with a collection of jokes to display random
+jokes in the browser upon a click of a button. The program makes use of a JavaScript
+with one function that fetch a json data accross the internet and manipulate
+the DOM to display random jokes. There is also a CSS that makes the HTML visually
+appealing.
+
+Files:
+jokes.html
+jokes.css
+jokes.js
+
+
+
